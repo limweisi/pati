@@ -10,7 +10,7 @@ export default {
     },
   },
   daisyui:{
-    themes: ["acid"]
+    themes: ["acid","dark"]
   },
   plugins: [require("daisyui")],
 } satisfies Config;

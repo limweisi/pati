@@ -68,25 +68,25 @@ const menu: NextPage = () => {
       <div>
         <div>
           <div>
-            <h1 className="flex justify-center text-4xl font-bold text-black">
-              Our pastries
+            <h1 className="flex justify-center pt-5 font-serif text-4xl text-pink-400">
+              Our Pastries
             </h1>
-            <p className="flex justify-center text-xl font-bold text-black">
+            <p className="flex justify-center pt-3 font-mono text-lg text-purple-400">
               Because, why not?
             </p>
           </div>
         </div>
         <div className="carousel-center carousel rounded-box flex justify-center space-x-24 pt-10">
           <div className="carousel-item flex-col">
-            <img src="./food.jpeg" className="rounded-box ml-16 h-96 w-fit" />
+            <img src="./food2.jpeg" className="rounded-box  h-96 w-fit" />
             <div>
-              <h1 className="mt-5 flex justify-center text-4xl font-bold text-black">
+              <h1 className="mt-5 flex justify-center font-serif text-4xl text-pink-400">
                 French Éclairs
               </h1>
-              <p className="mt-10 text-xl font-bold text-black">
+              <p className="mt-10 text-center text-lg text-purple-400">
                 Custom Design French Éclairs.
               </p>
-              <p className="text-xl font-bold text-black">
+              <p className="text-center text-lg text-purple-400">
                 Looks great, Tastes Great.
               </p>
             </div>
@@ -94,27 +94,27 @@ const menu: NextPage = () => {
           <div className="carousel-item flex-col">
             <img src="./food2.jpeg" className="rounded-box h-96 w-fit" />
             <div>
-              <h1 className="mr-24 mt-5 flex justify-center text-4xl font-bold text-black">
+              <h1 className="mt-5 flex justify-center font-serif text-4xl text-pink-400">
                 French Macarons
               </h1>
-              <p className="mt-10 text-xl font-bold text-black">
+              <p className="mt-10 text-center text-lg text-purple-400">
                 Custom Design French Macarons.
               </p>
-              <p className="text-xl font-bold text-black">
-                Available in a different design options!
+              <p className="text-center text-lg text-purple-400">
+                Available in different design options!
               </p>
             </div>
           </div>
           <div className="carousel-item flex-col">
             <img src="./food2.jpeg" className="rounded-box h-96 w-fit" />
             <div>
-              <h1 className="mr-28 mt-5 flex justify-center text-4xl font-bold text-black">
+              <h1 className="mt-5 flex justify-center font-serif text-4xl text-pink-400">
                 Event Spreads
               </h1>
-              <p className="mt-10 text-xl font-bold text-black">
+              <p className="mt-10 text-center text-lg text-purple-400">
                 In collaboration with our sister company,
               </p>
-              <p className="text-xl font-bold text-black">
+              <p className="text-center text-lg text-purple-400">
                 we offer events and catering services.
               </p>
             </div>
@@ -122,13 +122,13 @@ const menu: NextPage = () => {
           <div className="carousel-item flex-col">
             <img src="./food2.jpeg" className="rounded-box h-96 w-fit" />
             <div>
-              <h1 className="mr-28 mt-5 flex justify-center text-3xl font-bold text-black">
+              <h1 className="mt-5 flex justify-center font-serif text-3xl text-pink-400">
                 Bespoke Cakes
               </h1>
-              <p className="mt-10 text-xl font-bold text-black">
+              <p className="mt-10 text-center text-lg text-purple-400">
                 Custom Design French Macarons.
               </p>
-              <p className="text-xl font-bold text-black">
+              <p className="text-center text-lg text-purple-400">
                 Looks great, Tastes Great.
               </p>
             </div>
