@@ -31,9 +31,13 @@ const products = [
 
 const Home: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
+  const backgroundStyles={
+    backgroundImage: "url('./Home_Background.jpeg')",
+    backgroundSize: "auto",
+  };
 
   return (
-    <div>
+    <div className="flex-direction: column ">
       <nav className="flex justify-between items-center border-b-2 border-purple-400">
         <img className="w-32 m-5" src="./logo.png"/>
         <div className="space-x-5 text-purple-300" >
@@ -116,6 +120,48 @@ const Home: NextPage = () => {
               </Popover>
         </div>
       </nav>
+      <div className="advertisment bg-home-background bg-cover bg-center bg-no-repeat h-96" >
+        <div className="pt-9">
+          <img src="/Advert_content.png" className="h-80 mx-auto"></img>
+          
+        </div>
+      </div>
+      <div className="bg-gradient-to-br from-pink-200 to-pink-50 h-96 flex justify-around flex-row">
+        <div className="pt-10">
+          <img src="/content_img.jpg" className="h-52"></img>
+          <div className="content-info content-center">
+            <h1>Name of item 1</h1>
+            <p>Description of item</p>
+          </div>
+          <button className="mx-9 rounded-full border-solid border-2 border-black bg-orange-200 ">Get Now</button>
+        </div>
+        <div className="pt-10">
+          <img src="/content_img.jpg" className="h-52"></img>
+          <div className="content-info content-center">
+            <h1>Name of item 2</h1>
+            <p>Description of item</p>
+          </div>
+          <button className="mx-9 rounded-full border-solid border-2 border-black bg-orange-200 ">Get Now</button>
+        </div>
+        <div className="pt-10">
+          <img src="/content_img.jpg" className="h-52"></img>
+          <div className="content-info content-center">
+            <h1>Name of item 3</h1>
+            <p>Description of item</p>
+          </div>
+          <button className="mx-9 rounded-full border-solid border-2 border-black bg-orange-200 ">Get Now</button>
+        </div>
+      </div>
+      <div className="bg-content-background bg-cover bg-center bg-no-repeat h-80">
+        <div className="w-1/3 absolute right-0 my-auto" >
+          <h1 className="pt-10 text-pink-600 text-2xl font-bold">PASTRIES FOR ANY OCCASION!</h1>
+          <p>Both Savory and Sweet options - we have them both</p>
+          <p>Do you have a sweet tooth? Vote Now!</p>
+        </div>
+      </div>
+      <footer className="bg-home-background bg-cover bg-center bg-no-repeat h-48 ">
+        
+      </footer>
     </div>
   );
 };
