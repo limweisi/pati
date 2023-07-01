@@ -12,7 +12,10 @@ export default {
         '128': '32rem',
         '576px': '36rem',
         '1044px':'65rem ',
-        
+        'advert_content':'29.5rem',
+      },
+      width:{
+        'advert_content':'59rem'
       }
     },
   },

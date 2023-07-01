@@ -122,7 +122,7 @@ const Home: NextPage = () => {
       </nav>
       <div className="advertisment bg-home-background bg-cover bg-center bg-no-repeat h-576px" >
         <div className="pt-9">
-          <img src="/Advert_content.png" className="h-80 mx-auto"></img>
+          <img src="/Advert_content.png" className="h-advert_content w-advert_content mx-auto"></img>
           
         </div>
       </div>
