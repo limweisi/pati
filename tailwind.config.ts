@@ -7,7 +7,13 @@ export default {
       backgroundImage: theme=>({
         "home-background": "url('/Home_Background.jpeg')",
         "content-background": "url('/Content_Background.png')"
-      })
+      }),
+      height: {
+        '128': '32rem',
+        '576px': '36rem',
+        '1044px':'65rem ',
+        
+      }
     },
   },
   plugins: [],

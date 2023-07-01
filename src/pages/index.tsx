@@ -120,39 +120,39 @@ const Home: NextPage = () => {
               </Popover>
         </div>
       </nav>
-      <div className="advertisment bg-home-background bg-cover bg-center bg-no-repeat h-96" >
+      <div className="advertisment bg-home-background bg-cover bg-center bg-no-repeat h-576px" >
         <div className="pt-9">
           <img src="/Advert_content.png" className="h-80 mx-auto"></img>
           
         </div>
       </div>
-      <div className="bg-gradient-to-br from-pink-200 to-pink-50 h-96 flex justify-around flex-row">
-        <div className="pt-10">
-          <img src="/content_img.jpg" className="h-52"></img>
+      <div className="bg-gradient-to-br from-pink-200 to-pink-50 h-1044px flex justify-around flex-row">
+        <div className="pt-10 flex flex-col">
+          <img src="/content_img.jpg" className="h-576px w-80"></img>
           <div className="content-info content-center">
-            <h1>Name of item 1</h1>
-            <p>Description of item</p>
+            <h1 className="pt-10 text-pink-600 text-2xl font-medium ">Name of item 1</h1>
+            <p className="text-purple-500 text-xl">Description of item</p>
           </div>
           <button className="mx-9 rounded-full border-solid border-2 border-black bg-orange-200 ">Get Now</button>
         </div>
-        <div className="pt-10">
-          <img src="/content_img.jpg" className="h-52"></img>
+        <div className="pt-10 flex flex-col">
+          <img src="/content_img.jpg" className="h-576px w-80"></img>
           <div className="content-info content-center">
-            <h1>Name of item 2</h1>
-            <p>Description of item</p>
+            <h1 className="pt-10 text-pink-600 text-2xl font-medium">Name of item 2</h1>
+            <p className="text-purple-500 text-xl">Description of item</p>
           </div>
           <button className="mx-9 rounded-full border-solid border-2 border-black bg-orange-200 ">Get Now</button>
         </div>
-        <div className="pt-10">
-          <img src="/content_img.jpg" className="h-52"></img>
+        <div className="pt-10 flex flex-col">
+          <img src="/content_img.jpg" className="h-576px w-80"></img>
           <div className="content-info content-center">
-            <h1>Name of item 3</h1>
-            <p>Description of item</p>
+            <h1 className="pt-10 text-pink-600 text-2xl font-medium">Name of item 3</h1>
+            <p className="text-purple-500 text-xl">Description of item</p>
           </div>
           <button className="mx-9 rounded-full border-solid border-2 border-black bg-orange-200 ">Get Now</button>
         </div>
       </div>
-      <div className="bg-content-background bg-cover bg-center bg-no-repeat h-80">
+      <div className="bg-content-background bg-cover bg-center bg-no-repeat h-96">
         <div className="w-1/3 absolute right-0 my-auto" >
           <h1 className="pt-10 text-pink-600 text-2xl font-bold">PASTRIES FOR ANY OCCASION!</h1>
           <p>Both Savory and Sweet options - we have them both</p>
