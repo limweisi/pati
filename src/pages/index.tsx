@@ -43,7 +43,7 @@ const Home: NextPage = () => {
 
   return (
 
-    <div className="flex-direction: column ">
+    <div data-theme="acid" className="flex-direction: column ">
       <nav className="flex justify-between items-center border-b-2 border-purple-400">
         <img className="w-32 m-5" src="./logo.png"/>
         <div className="space-x-5 text-purple-300" >
