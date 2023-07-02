@@ -36,27 +36,23 @@ const products = [
 
 const Home: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
+  const backgroundStyles={
+    backgroundImage: "url('./Home_Background.jpeg')",
+    backgroundSize: "auto",
+  };
 
   return (
-    <div className="bg-white">
-      <div>
-        <nav className="flex items-center justify-between border-b-2 border-purple-400">
-          <img className="m-5 w-32" src="./logo.png" />
-          <div className="space-x-5 text-purple-300">
-            <a className="p-3 hover:bg-purple-50" href="#">
-              Home
-            </a>
-            <a className="p-3 hover:bg-purple-50" href="#">
-              Menu
-            </a>
-            <a className="p-3 hover:bg-purple-50" href="#">
-              Bespoke
-            </a>
-            <a className="p-3 hover:bg-purple-50" href="#">
-              FAQs
-            </a>
-          </div>
-          {/* <input className="w-30 h-10 border-b-2 border-purple-300 placeholder-purple-400" placeholder="Search Product" >
+
+    <div className="flex-direction: column ">
+      <nav className="flex justify-between items-center border-b-2 border-purple-400">
+        <img className="w-32 m-5" src="./logo.png"/>
+        <div className="space-x-5 text-purple-300" >
+          <a className="hover:bg-purple-50 p-3" href="#">Home</a>
+          <a className="hover:bg-purple-50 p-3" href="#">Menu</a>
+          <a className="hover:bg-purple-50 p-3" href="#">Bespoke</a>
+          <a className="hover:bg-purple-50 p-3" href="#">FAQs</a>
+        </div>
+        {/* <input className="w-30 h-10 border-b-2 border-purple-300 placeholder-purple-400" placeholder="Search Product" >
         </input> */}
           <div className="flex items-center justify-end">
             {/* Search */}
@@ -121,22 +117,60 @@ const Home: NextPage = () => {
                       Checkout
                     </button>
 
-                    <p className="mt-6 text-center">
-                      <a
-                        href="#"
-                        className="text-sm font-medium text-indigo-600 hover:text-indigo-500"
-                      >
-                        View Shopping Bag
-                      </a>
-                    </p>
-                  </form>
-                </Popover.Panel>
-              </Transition>
-            </Popover>
-          </div>
-        </nav>
+                      <p className="mt-6 text-center">
+                        <a href="#" className="text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                          View Shopping Bag
+                        </a>
+                      </p>
+                    </form>
+                  </Popover.Panel>
+                </Transition>
+              </Popover>
+        </div>
+      </nav>
+      <div className="advertisment bg-home-background bg-cover bg-center bg-no-repeat h-576px" >
+        <div className="pt-9">
+          <img src="/Advert_content.png" className="h-advert_content w-advert_content mx-auto"></img>
+          
+        </div>
       </div>
-      <div className="bg-white"></div>
+      <div className="bg-gradient-to-br from-pink-200 to-pink-50 h-1044px flex justify-around flex-row">
+        <div className="pt-10 flex flex-col">
+          <img src="/content_img.jpg" className="basis-1/2 h-576px w-80"></img>
+          <div className="basis-1/4 content-info text-center">
+            <h1 className="pt-10 text-pink-500 text-4xl ">Name of item 1</h1>
+            <p className="text-purple-500 text-xl">Description of item</p>
+          </div>
+          <button className=" mx-9 rounded-full border-solid border-2 border-black bg-orange-200 ">Get Now</button>
+        </div>
+        <div className="pt-10 flex flex-col ">
+          <img src="/content_img.jpg" className="basis-1/2 h-576px w-80"></img>
+          <div className="basis-1/4 content-info text-center ">
+            <h1 className="pt-10 text-pink-500 text-4xl px-14">Name of item 2</h1>
+            <p className="text-purple-500 text-xl">Description of item</p>
+          </div>
+          <button className="mx-9 rounded-full border-solid border-2 border-black bg-orange-200 ">Get Now</button>
+        </div>
+        <div className="pt-10 flex flex-col">
+          <img src="/content_img.jpg" className="basis-1/2 h-576px w-80"></img>
+          <div className="content-info text-center basis-1/4">
+            <h1 className="pt-10 text-pink-500 text-4xl">Name of item 3</h1>
+            <p className="text-purple-500 text-xl">Description of item</p>
+          </div>
+          <button className="mx-9 rounded-full border-solid border-2 border-black bg-orange-200 ">Get Now</button>
+        </div>
+      </div>
+      <div className="bg-content-background bg-cover bg-center bg-no-repeat h-96 relative">
+        <div className="float-right text-right pr-96 text-base absolute bottom-32 right-10" >
+          <h1 className="pt-10 text-pink-600 text-4xl font-bold">PASTRIES FOR ANY OCCASION!</h1>
+          <p className="text-purple-500 text-lg pt-10">Both Savory and Sweet options - we have them both</p>
+          <p className="text-purple-500 text-lg pt-10">Do you have a sweet tooth? Vote Now!</p>
+        </div>
+      </div>
+      <footer className="bg-home-background bg-cover bg-center bg-no-repeat h-48 ">
+        
+      </footer>
+
     </div>
   );
 };
