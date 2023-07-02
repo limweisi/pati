@@ -9,6 +9,8 @@ import {
   ShoppingBagIcon,
 } from "@heroicons/react/24/outline";
 import { Popover, Transition } from "@headlessui/react";
+import { AiOutlineInstagram, AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
+
 
 const products = [
   {
@@ -40,17 +42,18 @@ const Home: NextPage = () => {
     backgroundImage: "url('./Home_Background.jpeg')",
     backgroundSize: "auto",
   };
+  
 
   return (
 
     <div data-theme="acid" className="flex-direction: column ">
-      <nav className="flex justify-between items-center border-b-2 border-purple-400">
+      <nav className="flex justify-center items-center border-b-2 border-purple-400">
         <img className="w-32 m-5" src="./logo.png"/>
         <div className="space-x-5 text-purple-300" >
-          <a className="hover:bg-purple-50 p-3" href="#">Home</a>
-          <a className="hover:bg-purple-50 p-3" href="#">Menu</a>
-          <a className="hover:bg-purple-50 p-3" href="#">Bespoke</a>
-          <a className="hover:bg-purple-50 p-3" href="#">FAQs</a>
+          <Link className="hover:bg-purple-50 p-3" href="#">Home</Link>
+          <Link className="hover:bg-purple-50 p-3" href="#">Menu</Link>
+          <Link className="hover:bg-purple-50 p-3" href="#">Bespoke</Link>
+          <Link className="hover:bg-purple-50 p-3" href="#">FAQs</Link>
         </div>
         {/* <input className="w-30 h-10 border-b-2 border-purple-300 placeholder-purple-400" placeholder="Search Product" >
         </input> */}
@@ -134,37 +137,42 @@ const Home: NextPage = () => {
           
         </div>
       </div>
-      <div className="bg-gradient-to-br from-pink-200 to-pink-50 h-1044px flex justify-around flex-row">
+      <div className="bg-homepage-div3 bg-cover bg-center bg-no-repeat h-1044px flex justify-around flex-row">
         <div className="pt-10 flex flex-col">
-          <img src="/content_img.jpg" className="basis-1/2 h-576px w-80"></img>
+          <img src="/content_img.jpg" className="basis-1/2 h-576px w-80 drop-shadow-2xl"></img>
           <div className="basis-1/4 content-info text-center">
             <h1 className="pt-10 text-pink-500 text-4xl ">Name of item 1</h1>
             <p className="text-purple-500 text-xl">Description of item</p>
           </div>
-          <button className=" mx-9 rounded-full border-solid border-2 border-black bg-orange-200 ">Get Now</button>
-        </div>
-        <div className="pt-10 flex flex-col ">
-          <img src="/content_img.jpg" className="basis-1/2 h-576px w-80"></img>
-          <div className="basis-1/4 content-info text-center ">
-            <h1 className="pt-10 text-pink-500 text-4xl px-14">Name of item 2</h1>
-            <p className="text-purple-500 text-xl">Description of item</p>
-          </div>
-          <button className="mx-9 rounded-full border-solid border-2 border-black bg-orange-200 ">Get Now</button>
+          <button className="bg-orange-200 w-24 h-11 mx-auto rounded-lg">Get Now</button>
         </div>
         <div className="pt-10 flex flex-col">
-          <img src="/content_img.jpg" className="basis-1/2 h-576px w-80"></img>
-          <div className="content-info text-center basis-1/4">
-            <h1 className="pt-10 text-pink-500 text-4xl">Name of item 3</h1>
+          <img src="/content_img.jpg" className="basis-1/2 h-576px w-80 drop-shadow-2xl"></img>
+          <div className="basis-1/4 content-info text-center">
+            <h1 className="pt-10 text-pink-500 text-4xl ">Name of item 2</h1>
             <p className="text-purple-500 text-xl">Description of item</p>
           </div>
-          <button className="mx-9 rounded-full border-solid border-2 border-black bg-orange-200 ">Get Now</button>
+          <button className="bg-orange-200 w-24 h-11 mx-auto rounded-lg">Get Now</button>
+        </div>
+        <div className="pt-10 flex flex-col">
+          <img src="/content_img.jpg" className="basis-1/2 h-576px w-80 drop-shadow-2xl"></img>
+          <div className="basis-1/4 content-info text-center">
+            <h1 className="pt-10 text-pink-500 text-4xl ">Name of item 3</h1>
+            <p className="text-purple-500 text-xl">Description of item</p>
+          </div>
+          <button className="bg-orange-200 w-24 h-11 mx-auto rounded-lg">Get Now</button>
         </div>
       </div>
-      <div className="bg-content-background bg-cover bg-center bg-no-repeat h-96 relative">
+      <div className="bg-content-background bg-cover bg-center bg-no-repeat h-96 relative ">
         <div className="float-right text-right pr-96 text-base absolute bottom-32 right-10" >
           <h1 className="pt-10 text-pink-600 text-4xl font-bold">PASTRIES FOR ANY OCCASION!</h1>
           <p className="text-purple-500 text-lg pt-10">Both Savory and Sweet options - we have them both</p>
-          <p className="text-purple-500 text-lg pt-10">Do you have a sweet tooth? Vote Now!</p>
+          <p className="text-purple-500 text-lg pt-10">Do you have a sweet tooth? <span className="text-pink-500 underline">Vote Now!</span></p>
+          <div className="flex-col space-x-5 mt-5">
+            <button><AiOutlineInstagram size='2rem'  className="text-purple-500 border-purple-500 rounded-full"/></button>
+            <button><AiOutlineMail size='2rem' className="text-purple-500 border-purple-500 rounded-full"/></button>
+            <button><AiOutlinePhone size='2rem' className="text-purple-500 "/></button>
+          </div>
         </div>
       </div>
       <footer className="bg-home-background bg-cover bg-center bg-no-repeat h-48 ">
