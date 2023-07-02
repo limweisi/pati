@@ -76,7 +76,7 @@ const menu: NextPage = () => {
             </p>
           </div>
         </div>
-        <div className="carousel-center carousel rounded-box flex justify-center space-x-24 pt-10">
+        <div className="carousel-center carousel rounded-box flex justify-evenly space-x-24 pt-10">
           <div className="carousel-item flex-col">
             <img src="./food2.jpeg" className="rounded-box  h-96 w-fit" />
             <div>
@@ -92,7 +92,7 @@ const menu: NextPage = () => {
             </div>
           </div>
           <div className="carousel-item flex-col">
-            <img src="./food2.jpeg" className="rounded-box h-96 w-fit" />
+            <img src="./food2.jpeg" className="rounded-box ml-5 h-96 w-fit" />
             <div>
               <h1 className="mt-5 flex justify-center font-serif text-4xl text-pink-400">
                 French Macarons
@@ -106,7 +106,7 @@ const menu: NextPage = () => {
             </div>
           </div>
           <div className="carousel-item flex-col">
-            <img src="./food2.jpeg" className="rounded-box h-96 w-fit" />
+            <img src="./food2.jpeg" className="rounded-box ml-8 h-96 w-fit" />
             <div>
               <h1 className="mt-5 flex justify-center font-serif text-4xl text-pink-400">
                 Event Spreads
