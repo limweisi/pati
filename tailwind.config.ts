@@ -4,9 +4,11 @@ export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+
       backgroundImage: theme=>({
         "home-background": "url('/Home_Background.jpeg')",
-        "content-background": "url('/Content_Background.png')"
+        "content-background": "url('/Content_Background.png')",
+        "hero-pattern":"url('/top.jpeg')"
       }),
       height: {
         '128': '32rem',
@@ -17,7 +19,11 @@ export default {
       width:{
         'advert_content':'59rem'
       }
+
     },
   },
-  plugins: [],
+  daisyui:{
+    themes: ["acid","dark"]
+  },
+  plugins: [require("daisyui")],
 } satisfies Config;
