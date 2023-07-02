@@ -10,8 +10,47 @@ import {
 } from "@heroicons/react/24/outline";
 import { Popover, Transition } from "@headlessui/react";
 
-const menu: NextPage = () => {
+const bespoke: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
+
+  const navigation = {
+    main: [
+      { name: 'Home', href: '#' },
+      { name: 'Menu', href: '#' },
+      { name: 'Bespoke', href: '#' },
+      { name: 'FAQs', href: '#' },
+
+    ],
+    social: [
+      {
+        name: 'Facebook',
+        href: '#',
+        icon: ""
+      },
+      {
+        name: 'Instagram',
+        href: '#',
+        icon: ""
+        
+      },
+      {
+        name: 'Twitter',
+        href: '#',
+        icon: ""
+      },
+      {
+        name: 'GitHub',
+        href: '#',
+        icon: ""
+      },
+      {
+        name: 'YouTube',
+        href: '#',
+        icon: ""
+       
+      },
+    ],
+  }
 
   return (
     <div data-theme="acid">
@@ -76,7 +115,7 @@ const menu: NextPage = () => {
             </p>
           </div>
         </div>
-        <div className="carousel-center carousel rounded-box flex justify-center space-x-24 pt-10">
+        <div className="carousel-center carousel rounded-box flex justify-evenly space-x-24 pt-10">
           <div className="carousel-item flex-col">
             <img src="./food2.jpeg" className="rounded-box  h-96 w-fit" />
             <div>
@@ -92,7 +131,7 @@ const menu: NextPage = () => {
             </div>
           </div>
           <div className="carousel-item flex-col">
-            <img src="./food2.jpeg" className="rounded-box h-96 w-fit" />
+            <img src="./food2.jpeg" className="rounded-box ml-5 h-96 w-fit" />
             <div>
               <h1 className="mt-5 flex justify-center font-serif text-4xl text-pink-400">
                 French Macarons
@@ -106,7 +145,7 @@ const menu: NextPage = () => {
             </div>
           </div>
           <div className="carousel-item flex-col">
-            <img src="./food2.jpeg" className="rounded-box h-96 w-fit" />
+            <img src="./food2.jpeg" className="rounded-box ml-8 h-96 w-fit" />
             <div>
               <h1 className="mt-5 flex justify-center font-serif text-4xl text-pink-400">
                 Event Spreads
@@ -134,30 +173,40 @@ const menu: NextPage = () => {
             </div>
           </div>
         </div>
+
+        <div className="bg-content-background mt-10 bg-cover bg-center bg-no-repeat h-96 relative">
+        <div className="float-right text-right pr-96 text-base absolute bottom-32 right-10" >
+          <h1 className="pt-10 text-pink-600 text-4xl font-bold">PASTRIES FOR ANY OCCASION!</h1>
+          <p className="text-purple-500 text-lg pt-10">Both Savory and Sweet options - we have them both</p>
+          <p className="text-purple-500 text-lg pt-10">Do you have a sweet tooth? Vote Now!</p>
+        </div>
+      </div>
+
       </div>
 
       {/*footer*/}
-      <footer>
-        <div className="flex justify-center">
-          <div className="flex flex-col justify-center">
-            <img className="w-32" src="./logo.png" />
-            <p className="text-sm text-gray-400">© 2021 by Cupcake</p>
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="text-sm text-gray-400">Contact Us</p>
-            <p className="text-sm text-gray-400">FAQs</p>
-            <p className="text-sm text-gray-400">Privacy Policy</p>
-            <p className="text-sm text-gray-400">Terms of Use</p>
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="text-sm text-gray-400">Instagram</p>
-            <p className="text-sm text-gray-400">Facebook</p>
-            <p className="text-sm text-gray-400">Twitter</p>
-          </div>
+      <footer className="bg-home-background bg-cover bg-center bg-no-repeat h-full">
+      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+        <nav className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
+          {navigation.main.map((item) => (
+            <div key={item.name} className="pb-6">
+              <Link href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
+                {item.name}
+              </Link>
+            </div>
+          ))}
+        </nav>
+          <p className="flex justify-center mt-5 text-red-500 underline">Legal Notice | Privacy Policy</p>
+        <div className="mt-8 flex justify-center space-x-6">
+
+        <p className="mt-5text-center text-xs leading-5 text-gray-500">
+          &copy; 2022 Your Company, Inc. All rights reserved.
+        </p>
         </div>
+      </div>
       </footer>
     </div>
   );
 };
 
-export default menu;
+export default bespoke;
