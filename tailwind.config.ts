@@ -8,7 +8,8 @@ export default {
       backgroundImage: theme=>({
         "home-background": "url('/Home_Background.jpeg')",
         "content-background": "url('/Content_Background.png')",
-        "hero-pattern":"url('/top.jpeg')"
+        "hero-pattern":"url('/top.jpeg')",
+        "homepage-div3":"url('/homepage_div3.png')"
       }),
       height: {
         '128': '32rem',
