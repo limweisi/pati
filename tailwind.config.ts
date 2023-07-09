@@ -15,10 +15,21 @@ export default {
         '576px': '36rem',
         '1044px':'65rem ',
         'advert_content':'29.5rem',
+        'menu-content': '1687px',
+        'menu-product':'345.2px',
+        'menu-featured-products': '1341.8px',
+        'products-div':'313.19px',
+        'products-img': '297.19px',
       },
       width:{
-        'advert_content':'59rem'
-      }
+        'advert_content':'59rem',
+        'menu-content': '59rem',
+        'products-div':'313.19px',
+        'products-img': '297.19px',
+      },
+      margin:{
+        '488px': '488px'
+      },
 
     },
   },
