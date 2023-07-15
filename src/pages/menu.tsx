@@ -128,7 +128,7 @@ const menu: NextPage = () => {
       </nav>
       <div className="menu-content h-menu-content ">
         <div className="menu-content  h-menu-content w-menu-content mx-auto">
-          <div className="menu-product h-menu-product flex justify-around flex-row" >
+          <div className="menu-product h-menu-product flex justify-around flex-row pt-5" >
             <div className="h-products-div w-products-div ">
               <img src="/product_img.jpg" className="h-products-img w-products-img mx-auto static"></img>
               <p className="text-center text-lg text-white font-semibold relative -top-12">Classic Pastries</p>          
