@@ -20,12 +20,17 @@ export default {
         'menu-featured-products': '1341.8px',
         'products-div':'313.19px',
         'products-img': '297.19px',
+        '590px':'590px',
+        '446px':'446px',
+        '54px':'54px',
       },
       width:{
         'advert_content':'59rem',
         'menu-content': '59rem',
         'products-div':'313.19px',
         'products-img': '297.19px',
+        '446px':'446px',
+        '278px':'278px',
       },
       margin:{
         '488px': '488px'

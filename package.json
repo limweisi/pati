@@ -25,11 +25,8 @@
     "npm": "^9.8.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-<<<<<<< Updated upstream
-=======
     "react-icons": "^4.10.1",
     "react-responsive-carousel": "^3.2.23",
->>>>>>> Stashed changes
     "superjson": "1.12.2",
     "zod": "^3.21.4"
   },

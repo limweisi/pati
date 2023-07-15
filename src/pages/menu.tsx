@@ -34,13 +34,15 @@ const products = [
   // More products...
 ];
 
+
+
 const menu: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
 
   return (
     <div data-theme="acid" className="flex-direction: column ">
       {/* Nav bar */}
-      <nav className="flex justify-center items-center border-b-2 border-purple-400">
+      <nav className="flex justify-center items-center border-b-2">
         <img className="w-32 m-5" src="./logo.png"/>
         <div className="space-x-5 text-purple-300" >
           <Link className="hover:bg-purple-50 p-3" href="/">Home</Link>
@@ -124,25 +126,50 @@ const menu: NextPage = () => {
               </Popover>
         </div>
       </nav>
-      <div className="menu-content h-menu-content bg-red-700">
-        <div className="menu-content bg-zinc-50 h-menu-content w-menu-content mx-auto">
-          <div className="menu-product h-menu-product bg-red-200 flex justify-around flex-row" >
-            <div className="h-products-div w-products-div bg-yellow-300">
+      <div className="menu-content h-menu-content ">
+        <div className="menu-content  h-menu-content w-menu-content mx-auto">
+          <div className="menu-product h-menu-product flex justify-around flex-row" >
+            <div className="h-products-div w-products-div ">
+              <img src="/product_img.jpg" className="h-products-img w-products-img mx-auto static"></img>
+              <p className="text-center text-lg text-white font-semibold relative -top-12">Classic Pastries</p>          
+            </div>
+            <div className="h-products-div w-products-div">
+              <img src="/product_img.jpg" className="h-products-img w-products-img mx-auto"></img>  
+              <p className="text-center text-lg text-white font-semibold relative -top-12">Our Originalities</p> 
+            </div>
+            <div className="h-products-div w-products-div ">
               <img src="/product_img.jpg" className="h-products-img w-products-img mx-auto"></img>
-              <p className="text-center text-lg text-white font-semibold">Classic Pastries</p>          
-            </div>
-            <div className="h-products-div w-products-div bg-white">
-              <img src="/product_img.jpg" className="h-products-img w-products-img mx-auto"></img>   
-            </div>
-            <div className="h-products-div w-products-div bg-yellow-300">
-              <img src="/product_img.jpg" className="h-products-img w-products-img mx-auto"></img>   
+              <p className="text-center text-lg text-white font-semibold relative -top-12">Celebrate with Gifts</p>   
             </div>
           </div>
-          <div className="menu-featured-product h-menu-featured-products bg-emerald-300">
-
+          <div className="menu-featured-product h-menu-featured-products flex flex-wrap justify-evenly pt-4">
+            <div className="h-590px w-446px text-center ">
+              <img src="/sunnysideup.jpeg" className="w-446px h-446px"></img>
+              <p className="mt-3.5 text-xl text-purple-600">Sunny Side up</p>
+              <h1 className="text-3xl font-semibold text-pink-400">$18</h1>
+              <div className="w-278px h-54px bg-gray-400 mx-auto rounded-full"></div>
+            </div>
+            <div className="h-590px w-446px  text-center">
+              <img src="/Japanese Rock Garden.jpg" className="w-446px h-446px"></img>
+              <p className="mt-3.5 text-xl text-purple-600">Japanese Rock Garden</p>
+              <h1 className="text-3xl font-semibold text-pink-400">$18</h1>
+              <div className="w-278px h-54px bg-gray-400 mx-auto rounded-full"></div>
+            </div>
+            <div className="h-590px w-446px text-center">
+              <img src="/Boutique Bon Bons.jpg" className="w-446px h-446px"></img>
+              <p className="mt-3.5 text-xl text-purple-600">Boutique Bon Bons</p>
+              <h1 className="text-3xl font-semibold text-pink-400">$19.90</h1>
+              <div className="w-278px h-54px bg-gray-400 mx-auto rounded-full"></div>
+            </div>
+            <div className="h-590px w-446px  text-center">
+              <img src="/Classique French Macarons.jpg" className="w-446px h-446px"></img>
+              <p className="mt-3.5 text-xl text-purple-600">Classique French Macarons</p>
+              <h1 className="text-3xl font-semibold text-pink-400">$19.90</h1>
+              <div className="w-278px h-54px bg-gray-400 mx-auto rounded-full"></div>
+            </div>
           </div>
         </div>
- 
+
       </div>
       <footer className="bg-home-background bg-cover bg-center bg-no-repeat h-48 ">
         
@@ -152,3 +179,5 @@ const menu: NextPage = () => {
 };
 
 export default menu;
+
+
