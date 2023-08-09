@@ -16,17 +16,17 @@ const menu: NextPage = () => {
   return (
     <div data-theme="acid">
       {/* Nav bar */}
-      <nav className="flex items-center justify-between border-b-2 border-purple-400">
+      <nav className="flex justify-center items-center border-b-2 border-purple-400">
         <img className="m-5 w-32" src="./logo.png" />
 
         <div className="space-x-5 text-purple-300">
-          <Link className="p-3 hover:bg-purple-50" href="#">
+          <Link className="p-3 hover:bg-purple-50" href="/">
             Home
           </Link>
-          <Link className="p-3 hover:bg-purple-50" href="#">
+          <Link className="p-3 hover:bg-purple-50" href="/menu">
             Menu
           </Link>
-          <Link className="active: p-3 hover:bg-purple-50" href="#">
+          <Link className="active: p-3 hover:bg-purple-50" href="/bespoke">
             Bespoke
           </Link>
           <Link className="p-3 hover:bg-purple-50" href="#">

@@ -9,6 +9,8 @@ import {
   ShoppingBagIcon,
 } from "@heroicons/react/24/outline";
 import { Popover, Transition } from "@headlessui/react";
+import { AiOutlineInstagram, AiOutlineMail, AiOutlinePhone } from "react-icons/ai"
+
 
 const products = [
   {
@@ -47,10 +49,10 @@ const Home: NextPage = () => {
       <nav className="flex justify-between items-center border-b-2 border-purple-400">
         <img className="w-32 m-5" src="./logo.png"/>
         <div className="space-x-5 text-purple-300" >
-          <a className="hover:bg-purple-50 p-3" href="#">Home</a>
-          <a className="hover:bg-purple-50 p-3" href="#">Menu</a>
-          <a className="hover:bg-purple-50 p-3" href="#">Bespoke</a>
-          <a className="hover:bg-purple-50 p-3" href="#">FAQs</a>
+          <Link className="hover:bg-purple-50 p-3" href="#">Home</Link>
+          <Link className="hover:bg-purple-50 p-3" href="/menu">Menu</Link>
+          <Link className="hover:bg-purple-50 p-3" href="/bespoke">Bespoke</Link>
+          <Link className="hover:bg-purple-50 p-3" href="#">FAQs</Link>
         </div>
         {/* <input className="w-30 h-10 border-b-2 border-purple-300 placeholder-purple-400" placeholder="Search Product" >
         </input> */}

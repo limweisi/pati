@@ -1,7 +1,7 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
-
+import {Counter} from '../components/counter'
 import { api } from "~/utils/api";
 import { Fragment } from "react";
 import {
@@ -9,6 +9,9 @@ import {
   ShoppingBagIcon,
 } from "@heroicons/react/24/outline";
 import { Popover, Transition } from "@headlessui/react";
+
+
+
 
 const products = [
   {
@@ -147,25 +150,25 @@ const menu: NextPage = () => {
               <img src="/sunnysideup.jpeg" className="w-446px h-446px"></img>
               <p className="mt-3.5 text-xl text-purple-600">Sunny Side up</p>
               <h1 className="text-3xl font-semibold text-pink-400">$18</h1>
-              <div className="w-278px h-54px bg-gray-400 mx-auto rounded-full"></div>
+              <Counter />
             </div>
             <div className="h-590px w-446px  text-center">
               <img src="/Japanese Rock Garden.jpg" className="w-446px h-446px"></img>
               <p className="mt-3.5 text-xl text-purple-600">Japanese Rock Garden</p>
               <h1 className="text-3xl font-semibold text-pink-400">$18</h1>
-              <div className="w-278px h-54px bg-gray-400 mx-auto rounded-full"></div>
+              <Counter />
             </div>
             <div className="h-590px w-446px text-center">
               <img src="/Boutique Bon Bons.jpg" className="w-446px h-446px"></img>
               <p className="mt-3.5 text-xl text-purple-600">Boutique Bon Bons</p>
               <h1 className="text-3xl font-semibold text-pink-400">$19.90</h1>
-              <div className="w-278px h-54px bg-gray-400 mx-auto rounded-full"></div>
+              <Counter />
             </div>
             <div className="h-590px w-446px  text-center">
               <img src="/Classique French Macarons.jpg" className="w-446px h-446px"></img>
               <p className="mt-3.5 text-xl text-purple-600">Classique French Macarons</p>
               <h1 className="text-3xl font-semibold text-pink-400">$19.90</h1>
-              <div className="w-278px h-54px bg-gray-400 mx-auto rounded-full"></div>
+              <Counter />
             </div>
           </div>
         </div>
