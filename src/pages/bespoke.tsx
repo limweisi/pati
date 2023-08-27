@@ -15,42 +15,39 @@ const bespoke: NextPage = () => {
 
   const navigation = {
     main: [
-      { name: 'Home', href: '#' },
-      { name: 'Menu', href: '#' },
-      { name: 'Bespoke', href: '#' },
-      { name: 'FAQs', href: '#' },
-
+      { name: "Home", href: "#" },
+      { name: "Menu", href: "#" },
+      { name: "Bespoke", href: "#" },
+      { name: "FAQs", href: "#" },
     ],
     social: [
       {
-        name: 'Facebook',
-        href: '#',
-        icon: ""
+        name: "Facebook",
+        href: "#",
+        icon: "",
       },
       {
-        name: 'Instagram',
-        href: '#',
-        icon: ""
-        
+        name: "Instagram",
+        href: "#",
+        icon: "",
       },
       {
-        name: 'Twitter',
-        href: '#',
-        icon: ""
+        name: "Twitter",
+        href: "#",
+        icon: "",
       },
       {
-        name: 'GitHub',
-        href: '#',
-        icon: ""
+        name: "GitHub",
+        href: "#",
+        icon: "",
       },
       {
-        name: 'YouTube',
-        href: '#',
-        icon: ""
-       
+        name: "YouTube",
+        href: "#",
+        icon: "",
       },
     ],
-  }
+  };
 
   return (
     <div data-theme="acid">
@@ -174,36 +171,48 @@ const bespoke: NextPage = () => {
           </div>
         </div>
 
-        <div className="bg-content-background mt-10 bg-cover bg-center bg-no-repeat h-96 relative">
-        <div className="float-right text-right pr-96 text-base absolute bottom-32 right-10" >
-          <h1 className="pt-10 text-pink-600 text-4xl font-bold">PASTRIES FOR ANY OCCASION!</h1>
-          <p className="text-purple-500 text-lg pt-10">Both Savory and Sweet options - we have them both</p>
-          <p className="text-purple-500 text-lg pt-10">Do you have a sweet tooth? Vote Now!</p>
+        <div className="relative mt-10 h-96 bg-content-background bg-cover bg-center bg-no-repeat">
+          <div className="absolute bottom-32 right-10 float-right pr-96 text-right text-base">
+            <h1 className="pt-10 text-4xl font-bold text-pink-600">
+              BESPOKE PASTRIES
+            </h1>
+            <p className="pt-10 text-lg text-purple-500">
+              A party without food is just a meeting
+            </p>
+            <p className=" text-lg text-purple-500">
+              Let your special moments sparkle with special food magic
+            </p>
+          </div>
         </div>
-      </div>
-
       </div>
 
       {/*footer*/}
-      <footer className="bg-home-background bg-cover bg-center bg-no-repeat h-full">
-      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
-        <nav className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
-          {navigation.main.map((item) => (
-            <div key={item.name} className="pb-6">
-              <Link href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
-                {item.name}
-              </Link>
-            </div>
-          ))}
-        </nav>
-          <p className="flex justify-center mt-5 text-red-500 underline">Legal Notice | Privacy Policy</p>
-        <div className="mt-8 flex justify-center space-x-6">
-
-        <p className="mt-5text-center text-xs leading-5 text-gray-500">
-          &copy; 2022 Your Company, Inc. All rights reserved.
-        </p>
+      <footer className="h-full bg-home-background bg-cover bg-center bg-no-repeat">
+        <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+          <nav
+            className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
+            aria-label="Footer"
+          >
+            {navigation.main.map((item) => (
+              <div key={item.name} className="pb-6">
+                <Link
+                  href={item.href}
+                  className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                >
+                  {item.name}
+                </Link>
+              </div>
+            ))}
+          </nav>
+          <p className="mt-5 flex justify-center text-red-500 underline">
+            Legal Notice | Privacy Policy
+          </p>
+          <div className="mt-8 flex justify-center space-x-6">
+            <p className="mt-5text-center text-xs leading-5 text-gray-500">
+              &copy; 2022 Your Company, Inc. All rights reserved.
+            </p>
+          </div>
         </div>
-      </div>
       </footer>
     </div>
   );
